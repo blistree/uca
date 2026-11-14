@@ -5,7 +5,10 @@
       "firebase.json",
       ".firebaserc",
       "**/.*",
-      "README.md"
+      "README.md",
+      "node_modules/**",
+      "package*.json",
+      "server.mjs"
     ]
   }
 }

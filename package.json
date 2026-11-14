@@ -1,0 +1,17 @@
+{
+  "name": "uca",
+  "version": "1.0.0",
+  "description": "UCA Web Application",
+  "type": "module",
+  "main": "server.mjs",
+  "scripts": {
+    "build": "echo \"Build complete\"",
+    "start": "node server.mjs"
+  },
+  "dependencies": {
+    "express": "^4.21.2"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
