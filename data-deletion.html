@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Data Deletion Request | United Crypto Alliance (UCA)</title>
+  <meta name="description" content="Submit an official request to permanently delete your United Crypto Alliance account and associated personal data.">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/images/favicon.png">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <style>
+    .deletion-input-group {
+      margin: 20px 0;
+    }
+    .deletion-input {
+      width: 100%;
+      padding: 14px 18px;
+      border-radius: var(--radius-sm);
+      border: 1px solid var(--border-subtle);
+      background: rgba(255, 255, 255, 0.05);
+      color: #FFFFFF;
+      font-size: 1rem;
+      outline: none;
+      box-sizing: border-box;
+      margin-top: 8px;
+    }
+    .deletion-input:focus {
+      border-color: var(--brand-purple);
+      box-shadow: 0 0 10px rgba(124, 58, 237, 0.4);
+    }
+    .alert-box {
+      background: rgba(245, 158, 11, 0.1);
+      border: 1px solid rgba(245, 158, 11, 0.3);
+      padding: 16px 20px;
+      border-radius: var(--radius-sm);
+      color: #FCD34D;
+      font-size: 0.9rem;
+      margin: 18px 0;
+      line-height: 1.6;
+    }
+    .prefill-preview {
+      background: #060911;
+      border: 1px solid var(--border-subtle);
+      padding: 16px;
+      border-radius: var(--radius-sm);
+      color: #94A3B8;
+      font-family: var(--font-mono);
+      font-size: 0.8rem;
+      white-space: pre-wrap;
+      margin-top: 16px;
+      max-height: 220px;
+      overflow-y: auto;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="ambient-glow"></div>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="container">
+      <a href="index.html" class="nav-brand">
+        <img src="assets/images/favicon.png" alt="UCA Logo" class="nav-logo">
+        <span>United<span class="highlight">Crypto</span>Alliance</span>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="index.html#features">Features</a></li>
+        <li><a href="index.html#how-it-works">How It Works</a></li>
+        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+        <li><a href="data-deletion.html" class="active">Data Deletion</a></li>
+      </ul>
+
+      <div class="nav-cta">
+        <a href="index.html#download" class="btn btn-primary btn-sm">Download App</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="legal-page">
+    <div class="container">
+      <div class="legal-card">
+        <h1>Account &amp; Data Deletion</h1>
+        <span class="effective-date">Official User Data Governance • United Crypto Alliance (UCA)</span>
+
+        <p style="margin-bottom: 24px; font-size: 0.98rem; line-height: 1.7;">
+          In strict compliance with <strong>Google Play Store Developer Policies</strong> and global privacy frameworks (GDPR &amp; CCPA), users of the <strong>United Crypto Alliance</strong> application (<code>com.unitedcryptoalliance.app</code>) have the full right to permanently delete their account and erase all associated personal data from our systems.
+        </p>
+
+        <!-- Form Box -->
+        <div style="background: rgba(255, 255, 255, 0.03); border: 1px solid var(--border-subtle); padding: 28px; border-radius: var(--radius-md); margin-bottom: 36px;">
+          <h2 style="font-size: 1.3rem; margin-bottom: 8px; color: #FFFFFF;">Request Permanent Data Deletion</h2>
+          <p style="font-size: 0.9rem; color: var(--text-secondary);">
+            Enter your registered Google account email below. Clicking the button opens your default email client with all required verification details pre-filled.
+          </p>
+
+          <div class="deletion-input-group">
+            <label style="font-size: 0.85rem; font-weight: 700; color: #FFFFFF; text-transform: uppercase;">
+              Your Registered Account Email <span style="color: #EF4444;">*</span>
+            </label>
+            <input type="email" id="userEmailInput" class="deletion-input" placeholder="e.g. yourname@gmail.com" required>
+            <div id="emailError" style="color: #EF4444; font-size: 0.8rem; margin-top: 6px; display: none;">Please enter a valid email address.</div>
+          </div>
+
+          <!-- Strict Notice -->
+          <div class="alert-box">
+            <strong>⚠️ Strict Security Notice: Send From Registered Email Only</strong><br>
+            To prevent unauthorized account deletion, our security desk strictly verifies that the deletion email is sent <strong>directly from your registered Google email address</strong>. Requests received from other addresses are automatically discarded.
+          </div>
+
+          <button id="btnOpenMail" class="btn btn-primary btn-lg" style="width: 100%; margin-top: 8px;">
+            📧 Open Email App to Send Deletion Request
+          </button>
+
+          <p style="font-size: 0.8rem; color: var(--text-muted); margin-top: 16px; text-align: center;">
+            Support destination: <strong style="color: var(--brand-purple-light);">support@unitedcryptoalliance.com</strong>
+          </p>
+
+          <div class="prefill-preview" id="prefillPreview"></div>
+        </div>
+
+        <!-- Details -->
+        <section class="legal-section">
+          <h2>What Happens When Your Data is Deleted?</h2>
+          <ul>
+            <li><strong>Permanently Erased:</strong> Google Account UID, registered email, profile name, 24-hour mining timestamps, active session status, historical claimed and pending UCAT balances, and 6-digit invite code.</li>
+            <li><strong>Timeframe:</strong> Verification and permanent database deletion occurs within <strong>30 calendar days</strong>.</li>
+            <li><strong>Notice:</strong> Account deletion is permanent and irreversible. Mined coin balances cannot be restored once purged.</li>
+          </ul>
+        </section>
+
+        <section class="legal-section">
+          <h2>Contact Support</h2>
+          <p>
+            Official Support Email: <a href="mailto:support@unitedcryptoalliance.com" style="color: var(--brand-purple-light);">support@unitedcryptoalliance.com</a>
+          </p>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <p>&copy; 2026 United Crypto Alliance (UCA). All rights reserved.</p>
+        <p><a href="privacy-policy.html" style="color: var(--brand-purple-light);">Privacy Policy</a> • <a href="data-deletion.html" style="color: #EF4444;">Data Deletion</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const emailInput = document.getElementById('userEmailInput');
+    const btnOpenMail = document.getElementById('btnOpenMail');
+    const prefillPreview = document.getElementById('prefillPreview');
+    const emailError = document.getElementById('emailError');
+    const targetEmail = 'support@unitedcryptoalliance.com';
+
+    function getBody(userEmail) {
+      const email = userEmail.trim() || '[YOUR REGISTERED EMAIL HERE]';
+      return `Hello United Crypto Alliance Support Team,\n\nI am requesting the permanent deletion of my account and all associated personal data from the United Crypto Alliance mobile application (com.unitedcryptoalliance.app).\n\nRegistered Account Email: ${email}\n\nPlease permanently delete:\n1. My user profile and authentication credentials.\n2. All 24-hour mining session logs and accumulated UCAT coin balances.\n3. My alphanumeric referral invite code and network tree.\n4. My public crypto wallet address record and device identifiers.\n\nI confirm that I am sending this email from my registered address for verification.\n\nThank you.`;
+    }
+
+    function updatePreview() {
+      prefillPreview.textContent = getBody(emailInput.value);
+    }
+
+    emailInput.addEventListener('input', () => {
+      emailError.style.display = 'none';
+      updatePreview();
+    });
+
+    btnOpenMail.addEventListener('click', (e) => {
+      e.preventDefault();
+      const val = emailInput.value.trim();
+      if (!val || !val.includes('@') || !val.includes('.')) {
+        emailError.style.display = 'block';
+        emailInput.focus();
+        return;
+      }
+      emailError.style.display = 'none';
+      const subject = encodeURIComponent('Account & Data Deletion Request - United Crypto Alliance');
+      const body = encodeURIComponent(getBody(val));
+      window.location.href = `mailto:${targetEmail}?subject=${subject}&body=${body}`;
+    });
+
+    updatePreview();
+  </script>
+</body>
+</html>
